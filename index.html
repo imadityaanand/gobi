@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA 3</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bg-div"></div>
+        <img class="gobi-img" src="./assets/gobi.png">
+        <div class="logo-div">
+            <img class="logo-black" src="./assets/logo-black.png" alt="logo-img">
+            <img class="logo-white" src="./assets/logo-white.png" alt="logo-img">
+        </div>
+        <div class="about-div">
+            <h1>Enjoy the best meals cooked by You!</h1>
+        </div>
+        <div class="search-div">
+            <div class="search-area">
+                <img src="./assets/search.svg">
+                <input class="search-input" type="text" placeholder="Search">
+            </div>
+            
+            <button onclick="HandleSubmit()" class="search-button">Go</button>
+        </div>
+    </header>
+    <div class="random-section">
+        <h3>Recommended</h3>
+        <div>
+            <img class="random-image" src="" alt="food-img">
+            <div class="random-meal-info">
+                <h3 class="random-title"></h3>
+                <p></p>
+                <button>View Ingredients</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="meals-section na">
+        <h3>Your search results</h3>
+        <div class="meals-container">
+    
+        </div>
+    </div>
+    <div class="ing-container na">
+        <div onclick="CloseButton()"><img class="close-btn" src="./assets/close.svg" alt="close"></div>
+        <h3>Ingredients</h3>
+        <p class="ing-meal"></p>
+        <ul class="ing-list">
+
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

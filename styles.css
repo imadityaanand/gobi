@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;
+    border-style: none;
+    list-style: none;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.na {
+    display: none;
+}
+
+/* Header Section */
+
+.logo-black {
+    height: 30px;
+    margin: 50px 150px;
+}
+
+.logo-white {
+    display: none;
+}
+
+.bg-div {
+    height: 940px;
+    width: 55%;
+    left: 65%;
+    top: -200px;
+    transform: rotate(20deg);
+    position: absolute;
+    z-index: -1;
+    background-color: #587151;
+}
+
+.gobi-img {
+    position: absolute;
+    height: 250px;
+    top: 100px;
+    left: 55%;
+}
+
+.about-div {
+    margin: 80px 0 0 150px;
+}
+
+.about-div h1 {
+    width: 380px;
+    font-size: 2.2rem;
+}
+
+.search-div {
+    display: flex;
+    margin: 40px 0 150px 150px;
+}
+
+.search-area {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.search-area img {
+    height: 18px;
+    margin: 0 15px;
+}
+
+.search-input {
+    height: 35px;
+    width: 250px;
+    font-size: 15px;
+}
+
+.search-div button {
+    height: 39px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 0 15px;
+}
+
+.search-div button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* Random Meal Section */
+
+.random-section {
+    width: 100vw;
+    background-color: white;
+    z-index: 2;
+    margin: 0 150px;
+    padding: 80px 0;
+}
+
+.random-section img {
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 200px;
+}
+
+.random-section>div {
+    display: flex;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.random-meal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.random-meal-info h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 23px;
+    margin-bottom: 0px;
+}
+
+.random-meal-info p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.random-meal-info button {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 15px 20px;
+    background-color: #587151;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 200px;
+}
+
+.random-meal-info button:hover {
+    cursor: pointer;
+}
+
+
+
+/* Meals Section */
+
+.meals-section {
+    margin: 0 150px;
+}
+
+.meals-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.meal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 0 10px 30px 0;
+    padding: 6px 0;
+}
+
+.meal-card:hover {
+    cursor: pointer;
+}
+
+.meal-card h3 {
+    align-self: flex-start;
+    margin: 15px 0 15px 10px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.meal-image {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+
+
+/* Ingredients Container */
+
+.ing-container {
+    position: fixed;
+    top: 200px;
+    left: 37%;
+    padding: 20px 30px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ing-container>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    height: 18px;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.ing-meal {
+    font-weight: 700;
+    font-size: 15px;
+    color: #587151
+}
+
+.ing-container h3 {
+    margin-bottom: 0;
+}
+
+.ing-container p {
+    margin-bottom: 20px;
+}
+
+.ing-container li {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+    .logo-white {
+        display: block;
+        height: 30px;
+        margin: 30px 25px;
+    }
+
+    .logo-black {
+        display: none;
+    }
+
+    .bg-div {
+        height: 500px;
+        width: 100vw;
+        left: 0;
+        top: 0px;
+        transform: rotate(0deg);
+        position: absolute;
+        z-index: -1;
+        background-color: #587151;
+    }
+
+    .gobi-img {
+        position: absolute;
+        height: 250px;
+        top: 350px;
+        left: 10%;
+    }
+
+    .about-div {
+        margin: 0px 25px 0 25px;
+        text-align: center;
+    }
+
+    .about-div h1 {
+        width: auto;
+        font-size: 2rem;
+        color: white;
+        margin-top: 60px;
+    }
+
+    .search-div {
+        display: flex;
+        margin: 40px 25px 150px 25px;
+    }
+
+    .search-area {
+        display: flex;
+        align-items: center;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .random-section {
+        width: 100vw;
+        background-color: transparent;
+        z-index: 2;
+        margin: 0 25px;
+        padding: 150px 0 80px;
+    }
+
+    .random-section img {
+        margin-right: 20px;
+        border-radius: 15px;
+        height: 120px;
+    }
+
+    .random-section>div {
+        padding: 10px;
+        width: 85vw;
+    }
+
+    .random-meal-info h3 {
+        font-size: 15px;
+    }
+
+    .random-meal-info p {
+        font-size: 12px;
+    }
+
+    .random-meal-info button {
+        font-size: 10px;
+        padding: 15px 15px;
+        border-radius: 5px;
+        width: 130px;
+    }
+
+    .meals-section {
+        margin: 0 25px;
+    }
+
+    .meal-card {
+        width: 160px;
+    }
+
+    .meal-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .ing-container {
+        left: 10%;
+        width: 300px;
+    }
+}
